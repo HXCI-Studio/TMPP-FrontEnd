@@ -4,11 +4,11 @@
     <div class="content-style">
       学院/开设院系部：
       <a-select v-model="nowSelectCTId" @change="handleSelectCtChange" :loading="loading.ct" style="min-width: 200px">
-        <a-select-opt-group label="学院">
+        <a-select-opt-group label="开课院系部">
           <a-select-option v-for="college in collegeList" :key="college.id" :value="college.id">{{college.name}}
           </a-select-option>
         </a-select-opt-group>
-        <a-select-opt-group label="开设院系部">
+        <a-select-opt-group label="授课单位">
           <a-select-option v-for="teachingDepartment in teachingDepartmentList" :key="teachingDepartment.id"
                            :value="teachingDepartment.id">
             {{teachingDepartment.name}}

@@ -18,9 +18,9 @@
             <a-radio :value="1">第二学期</a-radio>
           </a-radio-group>
         </a-form-item>
-        <a-form-item label="开课院系部：" :label-col="{ span: 5 }" :wrapper-col="{ span: 12 }">
+        <a-form-item label="授课单位：" :label-col="{ span: 5 }" :wrapper-col="{ span: 12 }">
           <a-select v-decorator="['teaching_department',{rules: [{ required: true, message: '请选择授课部门！' }]}]"
-                    placeholder="选择开课院系部" :loading="teaching_department_loading">
+                    placeholder="选择授课单位" :loading="teaching_department_loading">
             <a-select-option v-for="teaching_department in formData.teaching_department" :key="teaching_department.id"
                              :value="teaching_department.id">
               {{teaching_department.name}}

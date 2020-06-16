@@ -274,7 +274,7 @@
           callback('');
           return;
         }
-        if (value < 1) {
+        if (value < 0) {
           callback(value);
         } else {
           callback();
